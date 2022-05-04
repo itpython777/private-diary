@@ -1,0 +1,48 @@
+.headline {
+    background-color: #1d74d8;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 32px;
+  }
+
+.btn {
+    padding: 2px 4px;       /*余白を設定*/
+    color: #FFF;            /*文字の色*/
+    border-radius: 3px;     /*角を丸める*/
+}
+#blue_btn {
+    background: #8cfffa;    /*ボタン色を設定*/
+}
+
+h1,h2 {
+    background: #ffc2d6;                /*背景色*/
+    padding:5px;                        /*文字の余白*/
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #a31b71;
+    color: white;
+    text-align: center;
+}
+ul.footer-menu li {
+display: inline;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.footer-menu {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+  }

@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta chareset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'main.css' %}"/>  
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header>
+    <h1 class="headline">
+        <a>管理者のプロフィール</a>
+</header>
+{% block content %}
+<h1>今回ブログ作成にあたって</h1>
+<p>なぜ、今回pythonのdjango(フレームワーク)を使ってブログを作成したのか？？
+    無料で使えるオープンソースということもあり、機能もシンプルでdjangoを使いました.
+    「Django」とは、pythonで実施されているWebアプリケーションを作るためのフレームワーク
+    のことを言います。Web開発に必要な機能が揃っている便利ツールのようなイメージです。
+</p>
+
+<h1>ブログをはじめたきっかけ</h1>
+<p>ブログを始めたきっかけは、トップブロガーの本堂さんやマナブさんのYouTubeやブログで影響を受けてやり始めました。
+    また、自分のスキル（武器）が欲しかったからです。ブログ運営で学べるスキルいろいろあることが調べていくうちにわかってきました。
+    例えば、Ｗｅｂマーケティングスキル、Ｗｅｂライティングスキル、ＳＥＯスキル、論理的思考力そのどれも私は欠けていました。ブログを最初書こうとした時、本当になにも言葉が浮かばず２，３行の記事しか投稿出来ませんでした。記事の後は、肉付け作業など大変で構成やレイアウトが全然決まりませんでした。ただどうしても簡単には諦めたくなく、ブログ研究をしたり、独学で書籍などで学びました。こうして検証と改善を繰り返すうちに自分のブログの型もできてきて、記事もスムーズにかけるようになりました。
+</p>
+
+<h2>Djangoでできることとは？？</h2>
+    <ul>
+        <li>管理サイト（セキュリティミスなどを開発者が避けられるようにできる）</li>
+        <li>ユーザー認証（パーミッション、ユーザーセッション）</li>
+        <li>ログイン機能</li>
+        <li>マイグレーション機能</li>
+        <li>ＣＲＵＤ（追加・参照・変更・削除）</li>
+        <li>セキュリティ対策（ＣＳＲＦ,ＸＳＳ,パスワード暗号化）</li>
+    </ul>
+{% endblock %}
+<!-- footer -->
+<footer>
+    <ul class="footer-menu">
+        <li><a href="{% url 'diary:index' %}">Top | </a></li>
+        <li>about  |  </li>
+        <li>service  |  </li>
+        <li>Contact Us</li>
+    </ul>
+    <p>© All rights reserved by webcampnavi.</p>
+</footer>
+</body>
+</html>
